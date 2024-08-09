@@ -33,7 +33,7 @@ button {
 }
 
 .toggle__btn {
-  padding: 10px;
+  padding: 5px 50px;
   border-radius: 30px;
   background-color: rgb(19, 140, 221);
 }
