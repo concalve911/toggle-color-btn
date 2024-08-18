@@ -7,12 +7,6 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  max-width: 1330px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 button {
   cursor: pointer;
   font-size: 16px;
@@ -20,6 +14,17 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background: #5c5c5c;
+  color: #fff;
 }
 
 .btn {
@@ -30,10 +35,12 @@ button {
 .text {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .toggle__btn {
   padding: 5px 50px;
   border-radius: 30px;
   background-color: rgb(19, 140, 221);
+  margin-right: 10px;
 }

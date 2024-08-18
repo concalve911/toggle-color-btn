@@ -1,15 +1,25 @@
 "use strict";
 
-const textElement = document.getElementsByClassName("text")[0];
-const button = document.getElementsByClassName("toggle__btn")[0];
+let storedLink = "";
 
-let isOrigin = true;
+const textElement = document.querySelector(".text");
+const button1 = document.querySelector(".toggle__btn");
+const button2 = document.querySelector(".toggle__btn-link");
 
-button.addEventListener("click", function () {
-  if (isOrigin) {
-    textElement.style.color = "blue";
+button1.addEventListener("click", () => {
+  const request = prompt("Enter your link");
+  if (!request?.trim()) {
+    alert("You entered a empty string");
   } else {
-    textElement.style.color = "yellow";
+    storedLink = request;
+    alert("Link saved!");
   }
-  isOrigin = !isOrigin;
+});
+
+button2.addEventListener("click", () => {
+  if (storedLink) {
+    window.location.href = storedLink;
+  } else {
+    alert("No link has been saved yet");
+  }
 });
